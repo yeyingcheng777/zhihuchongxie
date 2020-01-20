@@ -10,6 +10,7 @@ import Hot from '../views/Hot.vue'
 import QuestionWating from '../views/QuestionWaiting.vue'
 import Login from '../views/Login.vue'
 import ExploreMore from '../views/ExploreMore.vue'
+import MoreFavorites from '../views/MoreFavorites.vue'
 
 Vue.use(VueRouter)
 
@@ -53,6 +54,10 @@ const routes = [
 				component:() => import('../views/ExploreMore.vue'),
 			},
 			{
+				path:'more-favorites'	,
+				component:() =>import('../views/MoreFavorites.vue')
+			},
+			{
 				path:'special/all',
 				component: ()=> import('../views/Special.vue')
 			},
@@ -69,6 +74,7 @@ const routes = [
 	}
 ]
 const router = new VueRouter({
-	routes
+	routes,
+	mode:"history"
 })
 export default router
