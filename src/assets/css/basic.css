@@ -1,0 +1,12 @@
+.main {
+    background-color: #eee;
+
+}
+.container{
+    width: 67%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}

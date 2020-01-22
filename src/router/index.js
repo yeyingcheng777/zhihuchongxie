@@ -11,6 +11,7 @@ import QuestionWating from '../views/QuestionWaiting.vue'
 import Login from '../views/Login.vue'
 import ExploreMore from '../views/ExploreMore.vue'
 import MoreFavorites from '../views/MoreFavorites.vue'
+import MoreColumns from '../views/MoreColumns.vue'
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,7 @@ const routes = [
 				path:'more-favorites'	,
 				component:() =>import('../views/MoreFavorites.vue')
 			},
+
 			{
 				path:'special/all',
 				component: ()=> import('../views/Special.vue')
@@ -67,6 +69,11 @@ const routes = [
 			},
 
 		]
+	},
+	// 更多的专题页
+	{
+		path:'/more-columns',
+		component:() => import('../views/MoreColumns.vue')
 	},
 	{
 		path:'/login',
